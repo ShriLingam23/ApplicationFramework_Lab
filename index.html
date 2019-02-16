@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <script type="text/javascript">
+
+
+        //Question 01
+        var myAge=25;
+        console.log("Lab 01");
+        console.log("Hello World");
+        console.log("My Name is Ram and age is "+myAge);
+
+        function printMyName(age) {
+            console.log("From function!!! "+age);
+        }
+
+        printMyName(65);
+
+        var aFunc=function(){
+            console.log("First Function assigned to a variable");
+        }
+
+        function secondFunc(paraFunc){
+            console.log("Second Function assigned to a variable ");
+            paraFunc();
+        }
+
+        secondFunc(aFunc);
+
+        //Question 02
+
+        var obj={
+            name:"Sangakkara",
+            age:42,
+            profession:"Cricketer",
+            records:{
+                odi:"15000 runs",
+                test:"18000 runs",
+                t20:"7600 runs"
+            },
+            scoreCentury:function () {
+                alert("Sangakkara Scored a Century");
+            }
+        }
+
+        console.log(obj)
+        obj.scoreCentury();
+
+        //Question 05
+
+        fetch('https://api.github.com/users')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data) // Prints result from `response.json()` in getRequest
+            })
+            .catch(error => console.error(error))
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -50,6 +50,21 @@
         console.log(obj)
         obj.scoreCentury();
 
+        //Question 03
+        var vehicleName="Toyota";
+
+        function printVehicleName(){
+            console.log(this.vehicleName);
+        }
+
+        var Vehicle ={
+            vehicleName:"BMW",
+            getVehicleName :printVehicleName
+        }
+
+        printVehicleName();
+        Vehicle.getVehicleName();
+
         //Question 05
 
         fetch('https://api.github.com/users')

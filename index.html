@@ -51,6 +51,7 @@
         obj.scoreCentury();
 
         //Question 03
+
         var vehicleName="Toyota";
 
         function printVehicleName(){
@@ -64,6 +65,17 @@
 
         printVehicleName();
         Vehicle.getVehicleName();
+
+        //Question 04
+
+        function taxAdder(tax) {
+            return function(amount) {
+                return amount + (amount*tax/100);
+            };
+        }
+
+        var calc=taxAdder(5);
+        console.log(calc(10000));
 
         //Question 05
 

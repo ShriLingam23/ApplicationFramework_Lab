@@ -4,10 +4,6 @@
     <list default="true" id="9c7c7af4-ddcf-4a2f-947f-b5c180939b70" name="Default Changelist" comment="Default Changelist for Question 4 and New google map API">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab_01/google.map.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab_02/try.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab_03/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab_03/dist/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab_03/dist/main.65f60760.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab_03/dist/main.65f60760.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lab_01/index.html" afterPath="$PROJECT_DIR$/Lab_01/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lab_01/map.html" afterPath="$PROJECT_DIR$/Lab_01/map.html" />
@@ -185,7 +181,7 @@
       <workItem from="1552619087799" duration="887000" />
       <workItem from="1553391569764" duration="4743000" />
       <workItem from="1554872345930" duration="3217000" />
-      <workItem from="1556388690473" duration="987000" />
+      <workItem from="1556388690473" duration="1082000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist for Question 1,2 and 5">
       <created>1550334878503</created>
@@ -212,7 +208,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32852000" />
+    <option name="totallyTimeSpent" value="32947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />

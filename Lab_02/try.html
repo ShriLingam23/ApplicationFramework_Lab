@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+ <!--   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script> -->
+
+    <script>
+
+//        function githubAPI(callback){
+//             $.getJSON("https://api.github.com/users", callback);
+//         }
+//
+//         function userEx(data){
+//             data.forEach(element => {
+//                     console.log(element.login + " " + element.id);                }
+//             );
+//         }
+//
+//         githubAPI(userEx);
+
+        var VehicleName="Toyota";
+
+        function demo(){
+            var VehicleName="Honda";
+            console.log(this.VehicleName);
+        }
+
+        demo();
+
+        var printName = function () {
+            console.log("Vehicle Name is : "+this.VehicleName);
+        }
+
+        var vehicleTwo = {
+            VehicleName:'Tata',
+            amount:5000
+        }
+
+        var vehicleOne = {
+            VehicleName:'Nissan',
+            amount:7000,
+            getVehicleName:printName
+        }
+
+        vehicleOne.getVehicleName=vehicleOne.getVehicleName.bind(vehicleTwo);
+        vehicleOne.getVehicleName();
+
+
+        ///////
+
+        var Student= function () {
+            this.name;
+            this.age;
+            this.idNo;
+            this.printDetails = function () {
+                console.log(this.name);
+                console.log(this.age);
+                console.log(this.idNo);
+                console.log(this.gender);
+            }
+
+        }
+
+        Student.prototype.gender='Male';
+
+        var s1=new Student();
+        s1.name='Kamal';
+        s1.age=26;
+        s1.idNo='ENG321';
+        s1.gender='He';
+        s1.printDetails();
+
+
+        //////////////////////////////////////////////
+
+        var Vehicle=function (value) {
+            this.value=value;
+        }
+
+        Vehicle.prototype.setValue=function (value) {
+            this.value=value;
+        }
+
+        Vehicle.prototype.getValue=function () {
+            return this.value;
+        }
+
+        /*
+        During Inheritence we should follow three steps
+            1.Create a copy of Parent prototype and assign it to child prototype
+            2.Change constructor Name of child,bcz since we make a copy of Parent Constructor holds a value of Parent
+            3.Now we have to call Parent constructor, when we initialize the child instance
+         */
+        var Car = function (value) {
+            //In this way wecall the Parent constructor,when instializing the Car object
+            Vehicle.call(this,value);
+        }
+
+        //Here we create the copy of Parent prototype and assign it to child
+        Car.prototype = Object.create(Vehicle.prototype);
+
+        //Here wechange the constructor value of child, since we assign the copy of Parent prototype to child
+        Car.prototype.constructor = 'Car';
+
+        var car = new Car(25000);
+        console.log(car.getValue());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
